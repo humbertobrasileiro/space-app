@@ -1,0 +1,106 @@
+{
+    "sourceFile": "src/componentes/BarraLateral/index.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 22,
+            "patches": [
+                {
+                    "date": 1740615776315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1740615868344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n     <aside>\r\n       <nav>\r\n         <ul>\r\n           <li>\r\n-            <a href=''></a>\r\n+            <a href=''>Início</a>\r\n+            <a href=''>Teste</a>\r\n           </li>\r\n         </ul>\r\n       </nav>\r\n     </aside>\r\n"
+                },
+                {
+                    "date": 1740615952084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,20 @@\n+import styled from 'styled-components'\r\n+\r\n+const ListaEstilizada = styled.ul`\r\n+\r\n+`\r\n+\r\n const BarraLateral = () => {\r\n   return (\r\n     <aside>\r\n       <nav>\r\n-        <ul>\r\n+        <ListaEstilizada>\r\n           <li>\r\n             <a href=''>Início</a>\r\n             <a href=''>Teste</a>\r\n           </li>\r\n-        </ul>\r\n+        </ListaEstilizada>\r\n       </nav>\r\n     </aside>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1740615981526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import styled from 'styled-components'\r\n \r\n const ListaEstilizada = styled.ul`\r\n-\r\n+  list-style: none;\r\n+  padding: 0;\r\n+  margin: 0;\r\n `\r\n \r\n const BarraLateral = () => {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1740616013178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,12 +11,15 @@\n     <aside>\r\n       <nav>\r\n         <ListaEstilizada>\r\n           <li>\r\n-            <a href=''>Início</a>\r\n-            <a href=''>Teste</a>\r\n+            <a href='#'>Início</a>\r\n           </li>\r\n-        </ListaEstilizada>\r\n+          <li>\r\n+\r\n+          <a href='#'>Teste</a>\r\n+          </li>\r\n+          </ListaEstilizada>\r\n       </nav>\r\n     </aside>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1740616018988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,9 @@\n           <li>\r\n             <a href='#'>Início</a>\r\n           </li>\r\n           <li>\r\n-\r\n-          <a href='#'>Teste</a>\r\n+            <a href='#'>Teste</a>\r\n           </li>\r\n           </ListaEstilizada>\r\n       </nav>\r\n     </aside>\r\n"
+                },
+                {
+                    "date": 1740616072991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n const ListaEstilizada = styled.ul`\r\n   list-style: none;\r\n   padding: 0;\r\n   margin: 0;\r\n+  width: 212px;\r\n `\r\n \r\n const BarraLateral = () => {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1740616093252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n           </li>\r\n           <li>\r\n             <a href='#'>Teste</a>\r\n           </li>\r\n-          </ListaEstilizada>\r\n+        </ListaEstilizada>\r\n       </nav>\r\n     </aside>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1740616109952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n           <li>\r\n             <a href='#'>Início</a>\r\n           </li>\r\n           <li>\r\n-            <a href='#'>Teste</a>\r\n+            <a href='#'>Mais vistas</a>\r\n           </li>\r\n         </ListaEstilizada>\r\n       </nav>\r\n     </aside>\r\n"
+                },
+                {
+                    "date": 1740616378082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,14 +11,14 @@\n   return (\r\n     <aside>\r\n       <nav>\r\n         <ListaEstilizada>\r\n-          <li>\r\n+          <ItemNavegacao >\r\n             <a href='#'>Início</a>\r\n-          </li>\r\n-          <li>\r\n+          </ItemNavegacao>\r\n+          <ItemNavegacao>\r\n             <a href='#'>Mais vistas</a>\r\n-          </li>\r\n+          </ItemNavegacao>\r\n         </ListaEstilizada>\r\n       </nav>\r\n     </aside>\r\n   )\r\n"
+                },
+                {
+                    "date": 1740655931495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import styled from 'styled-components'\r\n+import ItemNavegacao from '../ItemNavegacao'\r\n \r\n const ListaEstilizada = styled.ul`\r\n   list-style: none;\r\n   padding: 0;\r\n"
+                },
+                {
+                    "date": 1740656029171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,12 @@\n     <aside>\r\n       <nav>\r\n         <ListaEstilizada>\r\n           <ItemNavegacao >\r\n-            <a href='#'>Início</a>\r\n+            <a href=\"\">Início</a>\r\n           </ItemNavegacao>\r\n           <ItemNavegacao>\r\n-            <a href='#'>Mais vistas</a>\r\n+            <a href=\"\">Mais vistas</a>\r\n           </ItemNavegacao>\r\n         </ListaEstilizada>\r\n       </nav>\r\n     </aside>\r\n"
+                },
+                {
+                    "date": 1740656267938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,12 @@\n     <aside>\r\n       <nav>\r\n         <ListaEstilizada>\r\n           <ItemNavegacao >\r\n-            <a href=\"\">Início</a>\r\n+            <a href=\"#\">Início</a>\r\n           </ItemNavegacao>\r\n           <ItemNavegacao>\r\n-            <a href=\"\">Mais vistas</a>\r\n+            <a href=\"#\">Mais vistas</a>\r\n           </ItemNavegacao>\r\n         </ListaEstilizada>\r\n       </nav>\r\n     </aside>\r\n"
+                },
+                {
+                    "date": 1740656439841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,17 @@\n           </ItemNavegacao>\r\n           <ItemNavegacao>\r\n             <a href=\"#\">Mais vistas</a>\r\n           </ItemNavegacao>\r\n+          <ItemNavegacao>\r\n+            <a href=\"#\">Mais curtidas</a>\r\n+          </ItemNavegacao>\r\n+          <ItemNavegacao>\r\n+            <a href=\"#\">Novas</a>\r\n+          </ItemNavegacao>\r\n+          <ItemNavegacao>\r\n+            <a href=\"#\">Surpreenda-me</a>\r\n+          </ItemNavegacao>\r\n         </ListaEstilizada>\r\n       </nav>\r\n     </aside>\r\n   )\r\n"
+                },
+                {
+                    "date": 1740656466068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   return (\r\n     <aside>\r\n       <nav>\r\n         <ListaEstilizada>\r\n-          <ItemNavegacao >\r\n+          <ItemNavegacao>\r\n             <a href=\"#\">Início</a>\r\n           </ItemNavegacao>\r\n           <ItemNavegacao>\r\n             <a href=\"#\">Mais vistas</a>\r\n"
+                },
+                {
+                    "date": 1740656817116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,22 +12,22 @@\n   return (\r\n     <aside>\r\n       <nav>\r\n         <ListaEstilizada>\r\n-          <ItemNavegacao>\r\n-            <a href=\"#\">Início</a>\r\n+          <ItemNavegacao iconeAtivo=\"/icones/home.png\" iconeInativo=\"/icones/home-inativo.png\">\r\n+            Início\r\n           </ItemNavegacao>\r\n           <ItemNavegacao>\r\n-            <a href=\"#\">Mais vistas</a>\r\n+            Mais vistas\r\n           </ItemNavegacao>\r\n           <ItemNavegacao>\r\n-            <a href=\"#\">Mais curtidas</a>\r\n+            Mais curtidas\r\n           </ItemNavegacao>\r\n           <ItemNavegacao>\r\n-            <a href=\"#\">Novas</a>\r\n+            Novas\r\n           </ItemNavegacao>\r\n           <ItemNavegacao>\r\n-            <a href=\"#\">Surpreenda-me</a>\r\n+            Surpreenda-me\r\n           </ItemNavegacao>\r\n         </ListaEstilizada>\r\n       </nav>\r\n     </aside>\r\n"
+                },
+                {
+                    "date": 1740656925903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <ListaEstilizada>\r\n           <ItemNavegacao iconeAtivo=\"/icones/home.png\" iconeInativo=\"/icones/home-inativo.png\">\r\n             Início\r\n           </ItemNavegacao>\r\n-          <ItemNavegacao>\r\n+          <ItemNavegacao iconeAtivo=\"/icones/mais-vistas.png\" iconeInativo=\"/icones/mais-vistas-inativo.png\">\r\n             Mais vistas\r\n           </ItemNavegacao>\r\n           <ItemNavegacao>\r\n             Mais curtidas\r\n"
+                },
+                {
+                    "date": 1740656990372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,23 +12,33 @@\n   return (\r\n     <aside>\r\n       <nav>\r\n         <ListaEstilizada>\r\n-          <ItemNavegacao iconeAtivo=\"/icones/home.png\" iconeInativo=\"/icones/home-inativo.png\">\r\n+\r\n+          <ItemNavegacao \r\n+            iconeAtivo=\"/icones/home.png\" \r\n+            iconeInativo=\"/icones/home-inativo.png\"\r\n+            ativo={true}\r\n+          >\r\n             Início\r\n           </ItemNavegacao>\r\n+\r\n           <ItemNavegacao iconeAtivo=\"/icones/mais-vistas.png\" iconeInativo=\"/icones/mais-vistas-inativo.png\">\r\n             Mais vistas\r\n           </ItemNavegacao>\r\n+\r\n           <ItemNavegacao>\r\n             Mais curtidas\r\n           </ItemNavegacao>\r\n+\r\n           <ItemNavegacao>\r\n             Novas\r\n           </ItemNavegacao>\r\n+\r\n           <ItemNavegacao>\r\n             Surpreenda-me\r\n           </ItemNavegacao>\r\n+          \r\n         </ListaEstilizada>\r\n       </nav>\r\n     </aside>\r\n   )\r\n"
+                },
+                {
+                    "date": 1740657064350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import styled from 'styled-components'\r\n-import ItemNavegacao from '../ItemNavegacao'\r\n+import ItemNavegacao from './ItemNavegacao'\r\n \r\n const ListaEstilizada = styled.ul`\r\n   list-style: none;\r\n   padding: 0;\r\n@@ -36,9 +36,9 @@\n \r\n           <ItemNavegacao>\r\n             Surpreenda-me\r\n           </ItemNavegacao>\r\n-          \r\n+\r\n         </ListaEstilizada>\r\n       </nav>\r\n     </aside>\r\n   )\r\n"
+                },
+                {
+                    "date": 1740657491656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,16 +14,16 @@\n       <nav>\r\n         <ListaEstilizada>\r\n \r\n           <ItemNavegacao \r\n-            iconeAtivo=\"/icones/home.png\" \r\n+            iconeAtivo=\"/icones/home-ativo.png\" \r\n             iconeInativo=\"/icones/home-inativo.png\"\r\n             ativo={true}\r\n           >\r\n             Início\r\n           </ItemNavegacao>\r\n \r\n-          <ItemNavegacao iconeAtivo=\"/icones/mais-vistas.png\" iconeInativo=\"/icones/mais-vistas-inativo.png\">\r\n+          <ItemNavegacao iconeAtivo=\"/icones/mais-vistas-ativo.png\" iconeInativo=\"/icones/mais-vistas-inativo.png\">\r\n             Mais vistas\r\n           </ItemNavegacao>\r\n \r\n           <ItemNavegacao>\r\n"
+                },
+                {
+                    "date": 1740657600300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,17 +25,17 @@\n           <ItemNavegacao iconeAtivo=\"/icones/mais-vistas-ativo.png\" iconeInativo=\"/icones/mais-vistas-inativo.png\">\r\n             Mais vistas\r\n           </ItemNavegacao>\r\n \r\n-          <ItemNavegacao>\r\n+          <ItemNavegacao iconeAtivo=\"/icones/mais-curtidas-ativo.png\" iconeInativo=\"/icones/mais-curtidas-inativo.png\">\r\n             Mais curtidas\r\n           </ItemNavegacao>\r\n \r\n-          <ItemNavegacao>\r\n+          <ItemNavegacao iconeAtivo=\"/icones/novas-ativo.png\" iconeInativo=\"/icones/novas-inativo.png\">\r\n             Novas\r\n           </ItemNavegacao>\r\n \r\n-          <ItemNavegacao>\r\n+          <ItemNavegacao iconeAtivo=\"/icones/surpreenda-me-ativo.png\" iconeInativo=\"/icones/surpreenda-me-inativo.png\">\r\n             Surpreenda-me\r\n           </ItemNavegacao>\r\n \r\n         </ListaEstilizada>\r\n"
+                },
+                {
+                    "date": 1740657704289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,21 +21,33 @@\n           >\r\n             Início\r\n           </ItemNavegacao>\r\n \r\n-          <ItemNavegacao iconeAtivo=\"/icones/mais-vistas-ativo.png\" iconeInativo=\"/icones/mais-vistas-inativo.png\">\r\n+          <ItemNavegacao \r\n+            iconeAtivo=\"/icones/mais-vistas-ativo.png\" \r\n+            iconeInativo=\"/icones/mais-vistas-inativo.png\"\r\n+          >\r\n             Mais vistas\r\n           </ItemNavegacao>\r\n \r\n-          <ItemNavegacao iconeAtivo=\"/icones/mais-curtidas-ativo.png\" iconeInativo=\"/icones/mais-curtidas-inativo.png\">\r\n+          <ItemNavegacao \r\n+            iconeAtivo=\"/icones/mais-curtidas-ativo.png\" \r\n+            iconeInativo=\"/icones/mais-curtidas-inativo.png\"\r\n+          >\r\n             Mais curtidas\r\n           </ItemNavegacao>\r\n \r\n-          <ItemNavegacao iconeAtivo=\"/icones/novas-ativo.png\" iconeInativo=\"/icones/novas-inativo.png\">\r\n+          <ItemNavegacao \r\n+            iconeAtivo=\"/icones/novas-ativo.png\" \r\n+            iconeInativo=\"/icones/novas-inativo.png\"\r\n+          >\r\n             Novas\r\n           </ItemNavegacao>\r\n \r\n-          <ItemNavegacao iconeAtivo=\"/icones/surpreenda-me-ativo.png\" iconeInativo=\"/icones/surpreenda-me-inativo.png\">\r\n+          <ItemNavegacao \r\n+            iconeAtivo=\"/icones/surpreenda-me-ativo.png\" \r\n+            iconeInativo=\"/icones/surpreenda-me-inativo.png\"\r\n+          >\r\n             Surpreenda-me\r\n           </ItemNavegacao>\r\n \r\n         </ListaEstilizada>\r\n"
+                },
+                {
+                    "date": 1741198527407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,59 +1,53 @@\n-import styled from 'styled-components'\r\n-import ItemNavegacao from './ItemNavegacao'\r\n+import { styled } from \"styled-components\"\r\n+import ItemNavegacao from \"./ItemNavegacao\"\r\n \r\n const ListaEstilizada = styled.ul`\r\n-  list-style: none;\r\n-  padding: 0;\r\n-  margin: 0;\r\n-  width: 212px;\r\n+    list-style: none;\r\n+    padding: 0;\r\n+    margin: 0;\r\n+    width: 212px;\r\n `\r\n \r\n const BarraLateral = () => {\r\n-  return (\r\n-    <aside>\r\n-      <nav>\r\n-        <ListaEstilizada>\r\n-\r\n-          <ItemNavegacao \r\n-            iconeAtivo=\"/icones/home-ativo.png\" \r\n-            iconeInativo=\"/icones/home-inativo.png\"\r\n-            ativo={true}\r\n-          >\r\n-            Início\r\n-          </ItemNavegacao>\r\n-\r\n-          <ItemNavegacao \r\n-            iconeAtivo=\"/icones/mais-vistas-ativo.png\" \r\n-            iconeInativo=\"/icones/mais-vistas-inativo.png\"\r\n-          >\r\n-            Mais vistas\r\n-          </ItemNavegacao>\r\n-\r\n-          <ItemNavegacao \r\n-            iconeAtivo=\"/icones/mais-curtidas-ativo.png\" \r\n-            iconeInativo=\"/icones/mais-curtidas-inativo.png\"\r\n-          >\r\n-            Mais curtidas\r\n-          </ItemNavegacao>\r\n-\r\n-          <ItemNavegacao \r\n-            iconeAtivo=\"/icones/novas-ativo.png\" \r\n-            iconeInativo=\"/icones/novas-inativo.png\"\r\n-          >\r\n-            Novas\r\n-          </ItemNavegacao>\r\n-\r\n-          <ItemNavegacao \r\n-            iconeAtivo=\"/icones/surpreenda-me-ativo.png\" \r\n-            iconeInativo=\"/icones/surpreenda-me-inativo.png\"\r\n-          >\r\n-            Surpreenda-me\r\n-          </ItemNavegacao>\r\n-\r\n-        </ListaEstilizada>\r\n-      </nav>\r\n-    </aside>\r\n-  )\r\n+    return (\r\n+        <aside>\r\n+            <nav>\r\n+                <ListaEstilizada>\r\n+                    <ItemNavegacao \r\n+                        iconeAtivo=\"/icones/home-ativo.png\" \r\n+                        iconeInativo=\"/icones/home-inativo.png\"\r\n+                        ativo={true}\r\n+                    >\r\n+                        Início\r\n+                    </ItemNavegacao>\r\n+                    <ItemNavegacao \r\n+                        iconeAtivo=\"/icones/mais-vistas-ativo.png\" \r\n+                        iconeInativo=\"/icones/mais-vistas-inativo.png\"\r\n+                    >\r\n+                        Mais vistas\r\n+                    </ItemNavegacao>\r\n+                    <ItemNavegacao \r\n+                        iconeAtivo=\"/icones/mais-curtidas-ativo.png\" \r\n+                        iconeInativo=\"/icones/mais-curtidas-inativo.png\"\r\n+                    >\r\n+                        Mais curtidas\r\n+                    </ItemNavegacao>\r\n+                    <ItemNavegacao \r\n+                        iconeAtivo=\"/icones/novas-ativo.png\" \r\n+                        iconeInativo=\"/icones/novas-inativo.png\"\r\n+                    >\r\n+                        Novas\r\n+                    </ItemNavegacao>\r\n+                    <ItemNavegacao \r\n+                        iconeAtivo=\"/icones/surpreenda-me-ativo.png\" \r\n+                        iconeInativo=\"/icones/surpreenda-me-inativo.png\"\r\n+                    >\r\n+                        Surpreenda-me\r\n+                    </ItemNavegacao>\r\n+                </ListaEstilizada>\r\n+            </nav>\r\n+        </aside>\r\n+    )\r\n }\r\n \r\n export default BarraLateral\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1740615776315,
+            "name": "Commit-0",
+            "content": "const BarraLateral = () => {\r\n  return (\r\n    <aside>\r\n      <nav>\r\n        <ul>\r\n          <li>\r\n            <a href=''></a>\r\n          </li>\r\n        </ul>\r\n      </nav>\r\n    </aside>\r\n  )\r\n}\r\n\r\nexport default BarraLateral"
+        }
+    ]
+}

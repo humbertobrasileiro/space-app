@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/componentes/BarraLateral/ItemNavegacao/index.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1740657183827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1740657239813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n const ItemNavegacao = ({ children, iconeAtivo, iconeInativo, ativo = false }) => {\r\n   return (\r\n     <>\r\n       <img src={ativo ? iconeAtivo : iconeInativo } alt=\"\" />\r\n-      { children}\r\n+      {children}\r\n     </>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1740657312839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,16 @@\n+import styled from 'styled-components'\r\n+\r\n+const ItemListaEstilizado = styled.li`\r\n+\r\n+`\r\n+\r\n const ItemNavegacao = ({ children, iconeAtivo, iconeInativo, ativo = false }) => {\r\n   return (\r\n-    <>\r\n+    <ItemListaEstilizado>\r\n       <img src={ativo ? iconeAtivo : iconeInativo } alt=\"\" />\r\n       {children}\r\n-    </>\r\n+    </ItemListaEstilizado>\r\n   )\r\n }\r\n \r\n export default ItemNavegacao\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740657968175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,20 @@\n import styled from 'styled-components'\r\n \r\n const ItemListaEstilizado = styled.li`\r\n-\r\n+  font-size: 24px;\r\n+  line-height: 29px;\r\n+  margin-bottom: 30px;\r\n+  cursor: pointer;\r\n+  color: ${ props => props.$ativo ? '#7B78E5' : '#D9D9D9'};\r\n+  display: flex;\r\n+  align-items: center;\r\n+  gap: 22px;\r\n `\r\n \r\n const ItemNavegacao = ({ children, iconeAtivo, iconeInativo, ativo = false }) => {\r\n   return (\r\n-    <ItemListaEstilizado>\r\n+    <ItemListaEstilizado $ativo={ativo}>\r\n       <img src={ativo ? iconeAtivo : iconeInativo } alt=\"\" />\r\n       {children}\r\n     </ItemListaEstilizado>\r\n   )\r\n"
+                },
+                {
+                    "date": 1741184456878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n   align-items: center;\r\n   gap: 22px;\r\n `\r\n \r\n-const ItemNavegacao = ({ children, iconeAtivo, iconeInativo, ativo = false }) => {\r\n+// eslint-disable-next-line react/prop-types\r\n+const ItemNavegacao = ({ children, iconeAtivo, iconeInativo, ativo: boolean = false }) => {\r\n   return (\r\n     <ItemListaEstilizado $ativo={ativo}>\r\n       <img src={ativo ? iconeAtivo : iconeInativo } alt=\"\" />\r\n       {children}\r\n"
+                },
+                {
+                    "date": 1741184514463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   gap: 22px;\r\n `\r\n \r\n // eslint-disable-next-line react/prop-types\r\n-const ItemNavegacao = ({ children, iconeAtivo, iconeInativo, ativo: boolean = false }) => {\r\n+const ItemNavegacao = ({ children, iconeAtivo, iconeInativo, ativo = false }) => {\r\n   return (\r\n     <ItemListaEstilizado $ativo={ativo}>\r\n       <img src={ativo ? iconeAtivo : iconeInativo } alt=\"\" />\r\n       {children}\r\n"
+                },
+                {
+                    "date": 1741192765820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n   line-height: 29px;\r\n   margin-bottom: 30px;\r\n   cursor: pointer;\r\n   color: ${ props => props.$ativo ? '#7B78E5' : '#D9D9D9'};\r\n+  font-family: ${ props => props.$ativo ? 'GandhiSansBold' : 'GandhiSansRegular'};\r\n   display: flex;\r\n   align-items: center;\r\n   gap: 22px;\r\n `\r\n"
+                },
+                {
+                    "date": 1741198487231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,22 @@\n-import styled from 'styled-components'\r\n+import { styled } from \"styled-components\"\r\n \r\n const ItemListaEstilizado = styled.li`\r\n-  font-size: 24px;\r\n-  line-height: 29px;\r\n-  margin-bottom: 30px;\r\n-  cursor: pointer;\r\n-  color: ${ props => props.$ativo ? '#7B78E5' : '#D9D9D9'};\r\n-  font-family: ${ props => props.$ativo ? 'GandhiSansBold' : 'GandhiSansRegular'};\r\n-  display: flex;\r\n-  align-items: center;\r\n-  gap: 22px;\r\n+    font-size: 24px;\r\n+    line-height: 29px;\r\n+    margin-bottom: 30px;\r\n+    cursor: pointer;\r\n+    color: ${ props => props.$ativo ? '#7B78E5' : '#D9D9D9'};\r\n+    font-family: ${ props => props.$ativo ? 'GandhiSansBold' : 'GandhiSansRegular'};\r\n+    display: flex;\r\n+    align-items: center;\r\n+    gap: 22px;\r\n `\r\n \r\n-// eslint-disable-next-line react/prop-types\r\n-const ItemNavegacao = ({ children, iconeAtivo, iconeInativo, ativo = false }) => {\r\n-  return (\r\n-    <ItemListaEstilizado $ativo={ativo}>\r\n-      <img src={ativo ? iconeAtivo : iconeInativo } alt=\"\" />\r\n-      {children}\r\n+const ItemNavegacao = ({children, iconeAtivo, iconeInativo, ativo = false}) => {\r\n+    return <ItemListaEstilizado $ativo={ativo}>\r\n+        <img src={ativo ? iconeAtivo : iconeInativo} alt=\"\" />\r\n+        {children}\r\n     </ItemListaEstilizado>\r\n-  )\r\n }\r\n \r\n export default ItemNavegacao\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1741198501013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n     align-items: center;\r\n     gap: 22px;\r\n `\r\n \r\n+// eslint-disable-next-line react/prop-types\r\n const ItemNavegacao = ({children, iconeAtivo, iconeInativo, ativo = false}) => {\r\n     return <ItemListaEstilizado $ativo={ativo}>\r\n         <img src={ativo ? iconeAtivo : iconeInativo} alt=\"\" />\r\n         {children}\r\n"
+                }
+            ],
+            "date": 1740657183827,
+            "name": "Commit-0",
+            "content": "const ItemNavegacao = ({ children, iconeAtivo, iconeInativo, ativo = false }) => {\r\n  return (\r\n    <>\r\n      <img src={ativo ? iconeAtivo : iconeInativo } alt=\"\" />\r\n      { children}\r\n    </>\r\n  )\r\n}\r\n\r\nexport default ItemNavegacao"
+        }
+    ]
+}

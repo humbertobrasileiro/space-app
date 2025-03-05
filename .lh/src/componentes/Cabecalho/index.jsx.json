@@ -1,0 +1,58 @@
+{
+    "sourceFile": "src/componentes/Cabecalho/index.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1740614198616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1740614420035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,15 @@\n+import styled from 'styled-components'\r\n+\r\n+const HeaderEstilizado = styled.header`\r\n+  padding: 60px 0;\r\n+  display: flex;\r\n+  justify-content: space-between;\r\n+`\r\n+\r\n const Cabecalho = () => {\r\n-  return (<></>)\r\n+  return (<HeaderEstilizado>\r\n+    <img src=\"/imagens/logo.png\" alt=\"\" />\r\n+  </HeaderEstilizado>)\r\n }\r\n \r\n export default Cabecalho\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740614701107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,13 @@\n const HeaderEstilizado = styled.header`\r\n   padding: 60px 0;\r\n   display: flex;\r\n   justify-content: space-between;\r\n+\r\n+  img {\r\n+    max-width: 212px;\r\n+    \r\n+  }\r\n `\r\n \r\n const Cabecalho = () => {\r\n   return (<HeaderEstilizado>\r\n"
+                },
+                {
+                    "date": 1740614995571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,9 @@\n   display: flex;\r\n   justify-content: space-between;\r\n \r\n   img {\r\n-    max-width: 212px;\r\n-    \r\n+    max-width: 212px;    \r\n   }\r\n `\r\n \r\n const Cabecalho = () => {\r\n"
+                },
+                {
+                    "date": 1740615160939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import styled from 'styled-components'\r\n+import CampoTexto from '../CampoTexto'\r\n \r\n const HeaderEstilizado = styled.header`\r\n   padding: 60px 0;\r\n   display: flex;\r\n@@ -12,8 +13,9 @@\n \r\n const Cabecalho = () => {\r\n   return (<HeaderEstilizado>\r\n     <img src=\"/imagens/logo.png\" alt=\"\" />\r\n+    <CampoTexto />\r\n   </HeaderEstilizado>)\r\n }\r\n \r\n export default Cabecalho\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740656116089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,13 @@\n   }\r\n `\r\n \r\n const Cabecalho = () => {\r\n-  return (<HeaderEstilizado>\r\n-    <img src=\"/imagens/logo.png\" alt=\"\" />\r\n-    <CampoTexto />\r\n-  </HeaderEstilizado>)\r\n+  return (\r\n+    <HeaderEstilizado>\r\n+      <img src=\"/imagens/logo.png\" alt=\"\" />\r\n+      <CampoTexto />\r\n+    </HeaderEstilizado>\r\n+  )\r\n }\r\n \r\n export default Cabecalho\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740656128973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n const Cabecalho = () => {\r\n   return (\r\n     <HeaderEstilizado>\r\n-      <img src=\"/imagens/logo.png\" alt=\"\" />\r\n+      <img src=\"/imagens/logo.png\" alt=\"logo da página\" />\r\n       <CampoTexto />\r\n     </HeaderEstilizado>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1741195640051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import styled from 'styled-components'\r\n import CampoTexto from '../CampoTexto'\r\n+import Banner from '../Banner'\r\n \r\n const HeaderEstilizado = styled.header`\r\n   padding: 60px 0;\r\n   display: flex;\r\n@@ -15,8 +16,9 @@\n   return (\r\n     <HeaderEstilizado>\r\n       <img src=\"/imagens/logo.png\" alt=\"logo da página\" />\r\n       <CampoTexto />\r\n+      <Banner />\r\n     </HeaderEstilizado>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1741195663042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,8 @@\n   return (\r\n     <HeaderEstilizado>\r\n       <img src=\"/imagens/logo.png\" alt=\"logo da página\" />\r\n       <CampoTexto />\r\n-      <Banner />\r\n     </HeaderEstilizado>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1741195684537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n import styled from 'styled-components'\r\n import CampoTexto from '../CampoTexto'\r\n-import Banner from '../Banner'\r\n \r\n const HeaderEstilizado = styled.header`\r\n   padding: 60px 0;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1741198565333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,20 @@\n-import styled from 'styled-components'\r\n-import CampoTexto from '../CampoTexto'\r\n+import { styled } from \"styled-components\"\r\n+import CampoTexto from \"../CampoTexto\"\r\n \r\n const HeaderEstilizado = styled.header`\r\n-  padding: 60px 0;\r\n-  display: flex;\r\n-  justify-content: space-between;\r\n-\r\n-  img {\r\n-    max-width: 212px;    \r\n-  }\r\n+    padding: 60px 0;\r\n+    display: flex;\r\n+    justify-content: space-between;\r\n+    img {\r\n+        max-width: 212px;\r\n+    }\r\n `\r\n \r\n const Cabecalho = () => {\r\n-  return (\r\n-    <HeaderEstilizado>\r\n-      <img src=\"/imagens/logo.png\" alt=\"logo da página\" />\r\n-      <CampoTexto />\r\n-    </HeaderEstilizado>\r\n-  )\r\n+    return (<HeaderEstilizado>\r\n+        <img src=\"/imagens/logo.png\" alt=\"\" />\r\n+        <CampoTexto />\r\n+    </HeaderEstilizado>)\r\n }\r\n \r\n export default Cabecalho\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1740614198616,
+            "name": "Commit-0",
+            "content": "const Cabecalho = () => {\r\n  return (<></>)\r\n}\r\n\r\nexport default Cabecalho"
+        }
+    ]
+}

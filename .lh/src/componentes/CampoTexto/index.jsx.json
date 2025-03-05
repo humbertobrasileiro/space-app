@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/componentes/CampoTexto/index.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1740615377816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1740615411329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,42 @@\n-import styled from 'styled-components';\r\n-import search from '../../assets/search.png';\r\n+import { styled } from \"styled-components\"\r\n+import search from './search.png'\r\n \r\n const ContainerEstilizado = styled.div`\r\n-  position: relative;\r\n-  display: inline-block;\r\n+    position: relative;\r\n+    display: inline-block;\r\n+`;\r\n+\r\n+\r\n+const CampoTextoEstilizado = styled.input`\r\n+    height: 56px;\r\n+    padding: 12px 16px;\r\n+    border-radius: 10px;\r\n+    border: 2px solid;\r\n+    border-color: #C98CF1;\r\n+    background: transparent;\r\n+    box-sizing: border-box;\r\n+    width: 566px;\r\n+    color: #D9D9D9;\r\n+    font-weight: 400;\r\n+    font-size: 20px;\r\n+    line-height: 20px;\r\n `\r\n \r\n-const CampoTexto = () => {\r\n-  return (<InputEstilizado></InputEstilizado>)\r\n+const IconeLupa = styled.img`\r\n+    position: absolute;\r\n+    top: 10px;\r\n+    right: 10px;\r\n+    width: 38px;\r\n+    height: 38px;\r\n+`;\r\n+\r\n+const CampoTexto = (props) => {\r\n+    return (\r\n+        <ContainerEstilizado>\r\n+            <CampoTextoEstilizado placeholder=\"O que você procura?\" {...props} />\r\n+            <IconeLupa src={search} alt=\"ícone de lupa\" />\r\n+        </ContainerEstilizado>\r\n+    )\r\n }\r\n \r\n export default CampoTexto\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740615643457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n     position: relative;\r\n     display: inline-block;\r\n `;\r\n \r\n-\r\n const CampoTextoEstilizado = styled.input`\r\n     height: 56px;\r\n     padding: 12px 16px;\r\n     border-radius: 10px;\r\n"
+                },
+                {
+                    "date": 1741198589977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n     position: relative;\r\n     display: inline-block;\r\n `;\r\n \r\n+\r\n const CampoTextoEstilizado = styled.input`\r\n     height: 56px;\r\n     padding: 12px 16px;\r\n     border-radius: 10px;\r\n@@ -31,9 +32,9 @@\n \r\n const CampoTexto = (props) => {\r\n     return (\r\n         <ContainerEstilizado>\r\n-            <CampoTextoEstilizado placeholder=\"O que você procura?\" {...props} />\r\n+            <CampoTextoEstilizado {...props} />\r\n             <IconeLupa src={search} alt=\"ícone de lupa\" />\r\n         </ContainerEstilizado>\r\n     )\r\n }\r\n"
+                }
+            ],
+            "date": 1740615377816,
+            "name": "Commit-0",
+            "content": "import styled from 'styled-components';\r\nimport search from '../../assets/search.png';\r\n\r\nconst ContainerEstilizado = styled.div`\r\n  position: relative;\r\n  display: inline-block;\r\n`\r\n\r\nconst CampoTexto = () => {\r\n  return (<InputEstilizado></InputEstilizado>)\r\n}\r\n\r\nexport default CampoTexto"
+        }
+    ]
+}

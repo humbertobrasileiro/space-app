@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/componentes/ItemNavegacao/index.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1740616260501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1740656838596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-const ItemNavegacao = () => {\r\n+const ItemNavegacao = ({ iconeAtivo, iconeInativo }) => {\r\n \r\n }\r\n \r\n export default ItemNavegacao\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1740616260501,
+            "name": "Commit-0",
+            "content": "const ItemNavegacao = () => {\r\n\r\n}\r\n\r\nexport default ItemNavegacao"
+        }
+    ]
+}
