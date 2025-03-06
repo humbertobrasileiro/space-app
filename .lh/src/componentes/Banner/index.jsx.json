@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1741194722456,
@@ -12,6 +12,10 @@
                 {
                     "date": 1741198438950,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-/* eslint-disable react/prop-types */\r\n import { styled } from \"styled-components\"\r\n \r\n const FigureEstilizada = styled.figure`\r\n     background-image: ${props => `url(${props.$backgroundImage})`};\r\n@@ -10,9 +9,8 @@\n     min-height: 328px;\r\n     margin: 0;\r\n     border-radius: 20px;\r\n     max-width: 100%;\r\n-    background-size: cover;\r\n `\r\n \r\n const TituloEstilizado = styled.h1`\r\n     font-weight: 400;\r\n@@ -22,8 +20,9 @@\n     max-width: 300px;\r\n     padding: 0 64px;\r\n `\r\n \r\n+// eslint-disable-next-line react/prop-types\r\n const Banner = ({texto, backgroundImage}) => {\r\n     return (<FigureEstilizada $backgroundImage={backgroundImage}>\r\n         <TituloEstilizado>{texto}</TituloEstilizado>\r\n     </FigureEstilizada>)\r\n"
+                },
+                {
+                    "date": 1741263965557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,31 +1,34 @@\n-import { styled } from \"styled-components\"\r\n+import { styled } from \"styled-components\";\r\n \r\n const FigureEstilizada = styled.figure`\r\n-    background-image: ${props => `url(${props.$backgroundImage})`};\r\n-    flex-grow: 1;\r\n-    background-repeat: no-repeat;\r\n-    display: flex;\r\n-    align-items: center;\r\n-    min-height: 328px;\r\n-    margin: 0;\r\n-    border-radius: 20px;\r\n-    max-width: 100%;\r\n-`\r\n+  background-image: ${(props) => `url(${props.$backgroundImage})`};\r\n+  flex-grow: 1;\r\n+  background-repeat: no-repeat;\r\n+  display: flex;\r\n+  align-items: center;\r\n+  min-height: 328px;\r\n+  margin: 0;\r\n+  border-radius: 20px;\r\n+  max-width: 100%;\r\n+  background-size: cover;\r\n+`;\r\n \r\n const TituloEstilizado = styled.h1`\r\n-    font-weight: 400;\r\n-    font-size: 40px;\r\n-    line-height: 48px;\r\n-    color: #FFFFFF;\r\n\\ No newline at end of file\n-    max-width: 300px;\r\n-    padding: 0 64px;\r\n-`\r\n+  font-weight: 400;\r\n+  font-size: 40px;\r\n+  line-height: 48px;\r\n+  color: #ffffff;\r\n+  max-width: 300px;\r\n+  padding: 0 64px;\r\n+`;\r\n \r\n // eslint-disable-next-line react/prop-types\r\n-const Banner = ({texto, backgroundImage}) => {\r\n-    return (<FigureEstilizada $backgroundImage={backgroundImage}>\r\n-        <TituloEstilizado>{texto}</TituloEstilizado>\r\n-    </FigureEstilizada>)\r\n-}\r\n+const Banner = ({ texto, backgroundImage }) => {\r\n+  return (\r\n+    <FigureEstilizada $backgroundImage={backgroundImage}>\r\n+      <TituloEstilizado>{texto}</TituloEstilizado>\r\n+    </FigureEstilizada>\r\n+  );\r\n+};\r\n \r\n-export default Banner\n+export default Banner;\r\n"
                 }
             ],
             "date": 1741194722456,

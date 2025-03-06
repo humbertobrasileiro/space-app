@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 15,
+            "activePatchIndex": 17,
             "patches": [
                 {
                     "date": 1740442338456,
@@ -68,6 +68,14 @@
                 {
                     "date": 1741198031752,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import EstilosGlobais from './componentes/EstilosGlobais'\n import Cabecalho from './componentes/Cabecalho'\n import BarraLateral from './componentes/BarraLateral'\n import Banner from './componentes/Banner'\n+import bannerBackground from './assets/banner.png'\n \n const FundoGradiente = styled.div`\n   background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);\n   width: 100%;\n@@ -16,9 +17,12 @@\n     <FundoGradiente>\n       <EstilosGlobais />\n       <Cabecalho />\n       <BarraLateral />\n-      <Banner />\n+      <Banner \n+        texto=\"A galeria mais completa de fotos do espaço!\"\n+        backgroundImage={bannerBackground}\n+      />\n     </FundoGradiente>\n   )\n }\n \n"
+                },
+                {
+                    "date": 1741262043077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   return (\n     <FundoGradiente>\n       <EstilosGlobais />\n       <AppContainer>\n-     <Cabecalho />\n+       <Cabecalho />\n       <BarraLateral />\n       <Banner \n         texto=\"A galeria mais completa de fotos do espaço!\"\n         backgroundImage={bannerBackground}\n"
+                },
+                {
+                    "date": 1741262058458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,36 @@\n+import { styled } from 'styled-components'\n+import EstilosGlobais from './componentes/EstilosGlobais'\n+import Cabecalho from './componentes/Cabecalho'\n+import BarraLateral from './componentes/BarraLateral'\n+import Banner from './componentes/Banner'\n+import bannerBackground from './assets/banner.png'\n+\n+const FundoGradiente = styled.div`\n+  background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);\n+  width: 100%;\n+  min-height: 100vh;\n+`\n+const AppContainer = styled.div`\n+  width: 1440px;\n+  margin: 0 auto;\n+  max-width: 100%;\n+`\n+\n+function App() {\n+\n+  return (\n+    <FundoGradiente>\n+      <EstilosGlobais />\n+      <AppContainer>\n+        <Cabecalho />\n+        <BarraLateral />\n+        <Banner \n+          texto=\"A galeria mais completa de fotos do espaço!\"\n+          backgroundImage={bannerBackground}\n+        />\n+      </AppContainer>\n+    </FundoGradiente>\n+  )\n+}\n+\n+export default App\n"
                 }
             ],
             "date": 1740442338456,

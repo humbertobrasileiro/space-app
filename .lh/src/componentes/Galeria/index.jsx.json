@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/componentes/Galeria/index.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1741262406201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1741263670936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n const Galeria = () => {\r\n-  return (\r\n-    <h2>Ande na galeria</h2>\r\n-  )\r\n-}\r\n+  return <h2>Navegue pela galeria</h2>;\r\n+};\r\n\\ No newline at end of file\n \r\n-export default Galeria;\n+export default Galeria;\r\n"
+                }
+            ],
+            "date": 1741262406201,
+            "name": "Commit-0",
+            "content": "const Galeria = () => {\r\n  return (\r\n    <h2>Ande na galeria</h2>\r\n  )\r\n}\r\n\r\nexport default Galeria;"
+        }
+    ]
+}
